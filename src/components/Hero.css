@@ -1,0 +1,140 @@
+/* src/components/Hero.css */
+.hero {
+  background-color: var(--background-color);
+  padding: 100px 0;
+  text-align: left;
+}
+
+.hero .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap-reverse; /* Image on top on smaller screens */
+}
+
+.hero-left-column { /* New wrapper for text and buttons */
+  flex: 2;
+  min-width: 300px;
+  display: flex; /* Enable flex for vertical stacking */
+  flex-direction: column; /* Stack children vertically */
+}
+
+.hero-text {
+  /* No flex property needed here directly, it's a child of hero-left-column */
+  margin-bottom: 2rem; /* Add space between text and buttons */
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  white-space: nowrap; /* Prevent line breaks for the name */
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color:var(--primary-color);
+  margin-bottom: 1.5rem;
+  white-space: nowrap; /* Prevent line breaks for the title */
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 0; /* Removed as spacing is now on hero-text parent */
+  max-width: 600px;
+ color: white; 
+}
+
+.hero-buttons { /* New class for the button container */
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  gap: 15px; /* Space between buttons */
+  margin-top: 0; /* Reset default margin, controlled by hero-text margin-bottom */
+}
+
+.hero-buttons .btn {
+  /* Removed individual button margins, using gap on parent now */
+  margin-bottom: 0;
+}
+
+.hero-buttons .btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.hero-buttons .btn-secondary:hover {
+  background-color: #3a3b3c;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Ensures perfect circle */
+}
+
+/* Responsive Hero */
+@media (max-width: 992px) {
+  .hero .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left-column {
+    align-items: center; /* Center text and buttons on small screens */
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    white-space: normal; /* Allow wrapping on very small screens if needed */
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+    white-space: normal; /* Allow wrapping on very small screens if needed */
+  }
+
+  .hero-left-column {
+    order: 2; /* Text and buttons below image on smaller screens */
+  }
+
+  .hero-image {
+    order: 1; /* Image above text on smaller screens */
+    margin-bottom: 30px;
+  }
+
+  .hero-buttons {
+    justify-content: center; /* Center buttons when they wrap */
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 80px 0;
+  }
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    margin-right: 0;
+  }
+  .hero-buttons {
+    flex-direction: column; /* Stack buttons vertically on very small screens */
+    gap: 10px;
+  }
+}

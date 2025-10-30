@@ -1,0 +1,107 @@
+/* src/components/ProjectCard.css */
+.project-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 150px; /* Fixed height for consistency */
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.project-info {
+  padding: 25px;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--dark-gray);
+}
+
+.project-info p {
+  font-size: 0.8rem;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  flex-grow: 1; /* Allows description to take up available space */
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.project-tech span {
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: auto; /* Push links to the bottom */
+  flex-wrap: wrap;
+}
+
+.project-links .btn {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.project-links .btn-secondary {
+  background-color:#0c54a1;
+}
+
+.project-links .btn-secondary:hover {
+  background-color: #03233b;
+}
+
+/* Responsive Project Card */
+@media (max-width: 480px) {
+  .project-card {
+    margin: 0 auto;
+    width: 95%; /* Adjust width for very small screens if needed */
+  }
+  .project-image {
+    height: 180px;
+  }
+  .project-info {
+    padding: 20px;
+  }
+  .project-info h3 {
+    font-size: 1.4rem;
+  }
+  .project-info p {
+    font-size: 0.95rem;
+  }
+  .project-tech span {
+    font-size: 0.8rem;
+  }
+  .project-links .btn {
+    padding: 7px 12px;
+    font-size: 0.85rem;
+  }
+}

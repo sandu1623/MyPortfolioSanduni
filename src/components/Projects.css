@@ -1,0 +1,76 @@
+/* src/components/Projects.css */
+.projects {
+  background-color: var(--background-color);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+
+
+.projects .section-description {
+  margin-bottom: 60px;
+  font-size: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Responsive Projects Grid */
+@media (max-width: 768px) {
+  .projects h2 {
+    font-size: 2rem;
+  }
+  .projects .section-description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  .projects-grid {
+    gap: 20px;
+  }
+}
+
+
+/* src/components/Projects.css additions */
+.project-category-buttons {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-category-buttons .category-btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+}
+
+/* For full-page sections to have consistent top padding when navigated to */
+.page-section {
+  padding-top: 100px; /* Adjust based on your header height to avoid content hiding behind sticky header */
+}
+
+@media (max-width: 768px) {
+  .project-category-buttons {
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  .project-category-buttons .category-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
