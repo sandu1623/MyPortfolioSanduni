@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MyPortfolioSanduni/static/css/main.f404dc43.css",
-    "main.js": "/MyPortfolioSanduni/static/js/main.77663b92.js",
+    "main.js": "/MyPortfolioSanduni/static/js/main.dade25e4.js",
     "static/js/453.6264690d.chunk.js": "/MyPortfolioSanduni/static/js/453.6264690d.chunk.js",
     "static/media/project1.png": "/MyPortfolioSanduni/static/media/project1.34e028b636f88985d918.png",
     "static/media/project5.png": "/MyPortfolioSanduni/static/media/project5.fb101fa4d32d740df189.png",
@@ -13,11 +13,11 @@
     "static/media/project.png": "/MyPortfolioSanduni/static/media/project.730c5cad43b6b1d33399.png",
     "index.html": "/MyPortfolioSanduni/index.html",
     "main.f404dc43.css.map": "/MyPortfolioSanduni/static/css/main.f404dc43.css.map",
-    "main.77663b92.js.map": "/MyPortfolioSanduni/static/js/main.77663b92.js.map",
+    "main.dade25e4.js.map": "/MyPortfolioSanduni/static/js/main.dade25e4.js.map",
     "453.6264690d.chunk.js.map": "/MyPortfolioSanduni/static/js/453.6264690d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f404dc43.css",
-    "static/js/main.77663b92.js"
+    "static/js/main.dade25e4.js"
   ]
 }
