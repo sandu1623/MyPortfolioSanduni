@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MyPortfolioSanduni/static/css/main.f404dc43.css",
+    "main.js": "/MyPortfolioSanduni/static/js/main.77663b92.js",
+    "static/js/453.6264690d.chunk.js": "/MyPortfolioSanduni/static/js/453.6264690d.chunk.js",
+    "static/media/project1.png": "/MyPortfolioSanduni/static/media/project1.34e028b636f88985d918.png",
+    "static/media/project5.png": "/MyPortfolioSanduni/static/media/project5.fb101fa4d32d740df189.png",
+    "static/media/project6.png": "/MyPortfolioSanduni/static/media/project6.04295bcec5937aef7c47.png",
+    "static/media/project4.png": "/MyPortfolioSanduni/static/media/project4.271ecfe8b6328d2abf00.png",
+    "static/media/project7.png": "/MyPortfolioSanduni/static/media/project7.15ec491c619d7d6925b7.png",
+    "static/media/profile.jpg": "/MyPortfolioSanduni/static/media/profile.845e566c0047aa4ec1ab.jpg",
+    "static/media/project2.png": "/MyPortfolioSanduni/static/media/project2.0810d963f2f75fe1198c.png",
+    "static/media/project.png": "/MyPortfolioSanduni/static/media/project.730c5cad43b6b1d33399.png",
+    "index.html": "/MyPortfolioSanduni/index.html",
+    "main.f404dc43.css.map": "/MyPortfolioSanduni/static/css/main.f404dc43.css.map",
+    "main.77663b92.js.map": "/MyPortfolioSanduni/static/js/main.77663b92.js.map",
+    "453.6264690d.chunk.js.map": "/MyPortfolioSanduni/static/js/453.6264690d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f404dc43.css",
+    "static/js/main.77663b92.js"
+  ]
+}
